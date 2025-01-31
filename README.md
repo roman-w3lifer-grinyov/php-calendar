@@ -1,4 +1,4 @@
-# php-calendar
+# [php-calendar](https://packagist.org/packages/w3lifer/php-calendar)
 
 - [Installation](#installation)
 - [Usage](#usage)
