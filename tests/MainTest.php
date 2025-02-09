@@ -9,13 +9,13 @@ final class MainTest extends TestCase
 {
     public function testOutput(): void
     {
-        $this->assertStringNotEqualsFile('tests/calendar-1970.html', (string) (new PhpCalendar())->get(1, 1, 1970));
-        $this->assertStringEqualsFile('tests/calendar-1970.html', (string) (new PhpCalendar())->get(12, 1, 1970));
-        $this->assertStringEqualsFile('tests/calendar-1970.html', (string) (new PhpCalendar())->getYear(1970));
+        $this->assertStringNotEqualsFile('tests/_data/calendar-1970.html', (string) (new PhpCalendar())->get(1, 1, 1970));
+        $this->assertStringEqualsFile('tests/_data/calendar-1970.html', (string) (new PhpCalendar())->get(12, 1, 1970));
+        $this->assertStringEqualsFile('tests/_data/calendar-1970.html', (string) (new PhpCalendar())->getYear(1970));
 
-        $this->assertStringNotEqualsFile('tests/calendar-2020.html', (string) (new PhpCalendar())->get(1, 1, 2020));
-        $this->assertStringEqualsFile('tests/calendar-2020.html', (string) (new PhpCalendar())->get(12, 1, 2020));
-        $this->assertStringEqualsFile('tests/calendar-2020.html', (string) (new PhpCalendar())->getYear(2020));
+        $this->assertStringNotEqualsFile('tests/_data/calendar-2020.html', (string) (new PhpCalendar())->get(1, 1, 2020));
+        $this->assertStringEqualsFile('tests/_data/calendar-2020.html', (string) (new PhpCalendar())->get(12, 1, 2020));
+        $this->assertStringEqualsFile('tests/_data/calendar-2020.html', (string) (new PhpCalendar())->getYear(2020));
     }
 
     public function testPrevPeriodParams(): void
